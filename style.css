@@ -1,0 +1,175 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    background-color: #F28B0C;
+    height: calc(100vh + 120px);
+    width: 300px;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav li {
+    margin: 20px;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    display: block;
+    transition: .3s;
+}
+
+li a:hover {
+    color: #ddd;
+}
+
+.container {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A6A6A6;
+    height: 100px;
+    border-radius: 30px;
+    margin: 10px;
+    display: none;
+}
+
+main {
+    display: flex;
+    width: 100%;
+
+}
+
+.calc-wrapper {
+    background-color: #fff;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.calc {
+    height: 800px;
+    width: 500px;
+    background-color: black;
+    border-radius: 30px;
+    -webkit-box-shadow: 1px 3px 18px 1px rgba(0, 0, 0, 0.8);
+    box-shadow: 1px 3px 18px 1px rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.aboveOutput {
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    text-align: right;
+}
+
+.output {
+    width: 100%;
+    height: 80px;
+    color: white;
+    font-size: 80px;
+    text-align: right;
+    margin: 30px 0;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 100px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.keyboard div {
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 40px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.keyboard .zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 50px;
+}
+
+.keyboard div:hover {
+    color: #ddd;
+}
+
+div.orange {
+    /* background-color: #F28B0C; */
+    background-color: #34eb67;
+}
+
+div.light-gray {
+    background-color: #A6A6A6;
+}
+
+div.gray {
+    background-color: #333333;
+}
+
+
+aside {
+    background-image: url("pexels-tara-winstead-7111559.jpg");
+    background-size: cover;
+    background-position: -150px;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 100vh;
+    border-radius: 30px;
+    margin: 10px;
+    display: none;
+
+}
+
+footer {
+    width: 99%;
+    height: 200px;
+    background-color: #A6A6A6;
+    border-radius: 30px;
+    margin: 10px;
+    display: none;
+}
